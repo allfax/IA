@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="../static/css/styles.css" />
+	</head>
+	<body>
+		<div id="main">
+			<div class="section">
+				<h2>Buy Tickets</h2>
+				<form action="/purchase" method="post">
+					<label>Quantity:</label>
+					<input type="number" name="quantity" min="1" required />
+					<button type="submit" class="button button-dark">Purchase</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

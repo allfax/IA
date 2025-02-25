@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="../static/css/styles.css" />
+		<title>Theatre Company</title>
+	</head>
+	<body>
+		<div id="cover">
+			<div class="title">
+				<h1>Welcome to Our Theatre</h1>
+				<a th:href="@{/buy-ticket}" class="button">Buy Tickets</a>
+				<div th:if="${name}">
+					<p>Logged in as: <span th:text="${name}"></span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
